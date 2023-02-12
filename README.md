@@ -70,22 +70,24 @@ You roll up your sleeves and think - it's just programming
 
 ### 1. Create Odin again
 
-Create the Odin frontend again with React and any map library you choose. The map should open up centered in the coordinates 59.8613 latitude and 22.4673 longitude.
+Create the Odin frontend again with React and any map library you choose (we recommend Mapbox GL). The map should open up centered in the coordinates `59.8613` latitude and `22.4673` longitude.
 
 ### 2. Overlay a SAR image to the map
 
 You were able to task the SAR constellation to take a new image. The image has now downlinked and you can find it from `odin-api/SAR_image_20420212.png`.
 
-The corner coordinates of the image are
+The corner coordinates starting from top left are
 
 ```
-[[22.29079060461106, 59.94773330885992],
- [22.638013169079656, 59.94773330885992],
- [22.638013169079656, 59.77844491774021],
- [22.29079060461106, 59.77844491774021]]
+[
+    [22.2908182629724, 59.91614254645401],
+    [22.578806773313246, 59.947751078236365],
+    [22.638044070378744, 59.809992490984754],
+    [22.351391574531174, 59.77847599974091],
+]
 ```
 
-Write a functionality to serve this image from the Odin backend to the frontend and overlay it to the map.
+Write the functionality to serve this image from the Odin backend to the frontend and overlay it to the map.
 
 ### 2. Add the locations of lighthouses to the map
 
@@ -93,12 +95,14 @@ The best way to help the ship navigate is to show the locations of lighthouses o
 
 Pull the lighthouse locations with the backend and serve them to the frontend through an endpoint. Visualise them on the map
 
-### 3. Add any other dataset or functionality that could make Odin more useful
+Also visualise the ship itself. It is currently in coordinates `59.89134, 22.30606`
 
-Visualize any other kind of dataset or add a new functionality that might be useful for Isla when entering the dangerous waters
-
-### 4. Write a short production deployment document
+### 3. Write a short document for the production deployment plan
 
 You remember the magnificently robust way Odin was deployed into production previously. How did it go again?
 
-Write a text document or draw a diagram explaining how you would deploy Odin to a production environment. Add it to the repository
+Write a text document and/or draw a diagram explaining how you would deploy Odin to a production environment. Add it to your repository
+
+### 4. (Optional) Add any other dataset or functionality that could make Odin more useful
+
+If you still have time, visualize any other kind of dataset or add a new functionality that might be useful for Isla when entering the dangerous waters
