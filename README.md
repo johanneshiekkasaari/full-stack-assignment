@@ -30,29 +30,21 @@ You put on a pair of warm woolen socks and a jacket and head outside. As soon as
 
 And then you hear the radio crackling from inside
 
-```
-----CChhHHRrrZZZ can anyone hear me? --CRRZZZrhhhzZZ
-our ship's AI has went dow---ChhHrzz----oes not respond
----CHzzRR help
-```
+> ----CChhHHRrrZZZ can anyone hear me? --CRRZZZrhhhzZZ
+> our ship's AI has went dow---ChhHrzz----oes not respond
+> ---CHzzRR help
 
 You run inside and response to the voice from the radio
 
-```
-Hello? This is ice monitoring station 42. Who is this? What is your location?
-```
+> Hello? This is ice monitoring station 42. Who is this? What is your location?
 
-```
---cHzzRRhh my name is Isla. I'm a mechanical engineer on a 300m long oil tanker.
-Nobody is driving the ship, the AI stopped responding! -hhHZZcczz---
-I see ice bergs in the distance
-```
+> --cHzzRRhh my name is Isla. I'm a mechanical engineer on a 300m long oil tanker.
+> Nobody is driving the ship, the AI stopped responding! -hhHZZcczz---
+> ----CHhrsszzzz-- ice bergs in the distance
 
-You know exactly what to do. Time to spin up the legacy ice monitoring platform Odin, the one you and your team build all those years ago. That will help you guide the mechanic through the treacherous maze of islands, rocks and ice bergs.
+You know exactly what to do. Time to spin up the legacy ice monitoring platform Odin, the one you and your team build all those years ago. That will help you guide the mechanic and the ship through the treacherous maze of islands, rocks and ice bergs.
 
-```
-Listen Isla, just calm down. I'm gonna help you through the ice bergs. Just hang in there
-```
+> Listen Isla, just calm down. I'm gonna help you. Just hang in there
 
 You start Odin, it compiles succesfully. Screens start flickering and then you gasp again, for the second time today
 
@@ -62,7 +54,7 @@ ODIN NOT FOUND
 ** ERROR 404 **
 ```
 
-The solar event must have wiped Odin's memory banks! You open up the source code of Odin - it's empty. You take a look a the clock. You estimate the tanker has about 4-6 hours until it enters the dangerous waters. You should be able to write enough functionalities back before the tanker is in trouble
+The solar event must have wiped Odin's memory banks! You pull up the source code of Odin - it's empty. You take a look a the clock. You estimate the tanker has about 4-6 hours until it enters the dangerous waters. You should be able to write enough functionalities back before the tanker is in trouble
 
 You roll up your sleeves and think - it's just programming
 
@@ -70,7 +62,7 @@ You roll up your sleeves and think - it's just programming
 
 ### 1. Create Odin again
 
-Create the Odin frontend again with React and any map library you choose. The map should open up centered in the coordinates 59.8613 latitude and 22.4673 longitude.
+Create the Odin frontend again with React and any map library you choose. The map should open up centered in the coordinates `59.8613` latitude and `22.4673` longitude.
 
 ### 2. Overlay a SAR image to the map
 
@@ -87,17 +79,17 @@ The corner coordinates of the image are
 
 Write a functionality to serve this image from the Odin backend to the frontend and overlay it to the map.
 
-### 2. Add the locations of lighthouses to the map
+### 3. Add the locations of lighthouses to the map
 
 The best way to help the ship navigate is to show the locations of lighthouses on the map. You managed to salvage the old corrupted codebase only a bit, revealing a string related to this data source, it says `seamark:light:range`.
 
-Pull the lighthouse locations with the backend and serve them to the frontend through an endpoint. Visualise them on the map
+Pull the lighthouse locations with the backend, serve them to the frontend through an endpoint and visualise them on the map
 
-### 3. Add any other dataset or functionality that could make Odin more useful
+### 4. Add any other dataset or functionality that could make Odin more useful
 
 Visualize any other kind of dataset or add a new functionality that might be useful for Isla when entering the dangerous waters
 
-### 4. Write a short production deployment document
+### 5. Write a short production deployment document
 
 You remember the magnificently robust way Odin was deployed into production previously. How did it go again?
 
