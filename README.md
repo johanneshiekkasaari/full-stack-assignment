@@ -60,11 +60,11 @@ You roll up your sleeves and think - it's just programming
 
 # The Tasks
 
-### 1. Create Odin again
+## 1. Create Odin again
 
 Create the Odin frontend again with React and any map library you choose. The map should open up centered in the coordinates `59.8613` latitude and `22.4673` longitude.
 
-### 2. Overlay a SAR image to the map
+## 2. Overlay a SAR image to the map
 
 You were able to task the SAR constellation to take a new image. The image has now downlinked and you can find it from `odin-api/SAR_image_20420212.png`.
 
@@ -79,17 +79,17 @@ The corner coordinates of the image are
 
 Write a functionality to serve this image from the Odin backend to the frontend and overlay it to the map.
 
-### 3. Add the locations of lighthouses to the map
+## 3. Add the locations of lighthouses to the map
 
 The best way to help the ship navigate is to show the locations of lighthouses on the map. You managed to salvage the old corrupted codebase only a bit, revealing a string related to this data source, it says `seamark:light:range`.
 
 Pull the lighthouse locations with the backend, serve them to the frontend through an endpoint and visualise them on the map
 
-### 4. Add any other dataset or functionality that could make Odin more useful
+## 4. Add any other dataset or functionality that could make Odin more useful
 
 Visualize any other kind of dataset or add a new functionality that might be useful for Isla when entering the dangerous waters
 
-### 5. Write a short production deployment document
+## 5. Write a short production deployment document
 
 You remember the magnificently robust way Odin was deployed into production previously. How did it go again?
 
