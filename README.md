@@ -1,8 +1,14 @@
 # Introduction
 
-This is a recruitment assignment for the full stack engineer position. We have created an empty frontend and backend project for you. You are expected to finish the tasks in this assigment and return the files along this repository either as a forked public github repository or a zipped file via email.
+This is the recruitment assignment for a full stack engineer position. We have created an empty frontend and backend project for you. You are expected to finish the tasks in this assigment and return a working local application along with this repository either as a forked public github repository or a zipped project via email.
 
-The frontend server needs node (v18) installed and can be run with
+If you hit a wall on some task or you're just unable to finish it in time, you can still return whatever code you have with comments why you think it's not working and what would you do with better time.
+
+We expect the tasks to take 4-6h of time.
+
+# Installation
+
+The frontend server is a Node project using typescript and React. It needs node (v18) installed and can be run with
 
 ```
 cd odin-ui
@@ -18,7 +24,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-# Prequel
+# The Prequel
 
 It's a foggy afternoon in the archipelago of Turku on the island of Nauvo. You take a sip from your old coffee mug after an very uneventful day on this decades old ice monitoring station. You glance at the huge ice bergs traversing slowly in the distance. You travel back to pre-AI days when this station was important and full of life. You remember your first day on the job, not long after the catastrophic reversal of the Gulf stream and the dramatic drop in temperatures across Northern Europe. You remember the professional work collagues, the exciting work athmosphere and the cutting edge technology you were equipped with - a constellation of SAR satellites and a fleet of microservices. But that's all gone, those were the good days. Now it's just you living on the station. You gulp down the last of your already cold coffee, go back inside and wish you weren't so alone.
 
@@ -26,12 +32,12 @@ After slowly drifting into sleep you suddenly wake up. Seagulls are screaming ou
 
 Why are the seagulls active, wait why is the room still illuminated??
 
-You put on a pair of warm woolen socks and a jacket and head outside. As soon as you open the station's heavy door, you encounter something you've never seen - the northern lights, the aurora borealis so bright it feels like day. At first the beauty makes you gasp but it does not take long for you to realise a solar event this strong will definitely have a destructive affect on on electronic devices.
+You put on a pair of warm woolen socks and a jacket and head outside. As soon as you open the station's heavy door, you encounter something you've never seen - the northern lights, the aurora borealis so bright it feels like day. At first the beauty makes you gasp but it does not take long for you to realise a solar event this strong will definitely have a destructive effect on electronic devices.
 
 And then you hear the radio crackling from inside
 
 > ----CChhHHRrrZZZ can anyone hear me? --CRRZZZrhhhzZZ
-> our ship's AI has went dow---ChhHrzz----oes not respond
+> our ship's AI has went dow---ChhHrzz---- does not respond
 > ---CHzzRR help
 
 You run inside and response to the voice from the radio
@@ -42,7 +48,7 @@ You run inside and response to the voice from the radio
 > Nobody is driving the ship, the AI stopped responding! -hhHZZcczz---
 > ----CHhrsszzzz-- ice bergs in the distance
 
-You know exactly what to do. Time to spin up the legacy ice monitoring platform Odin, the one you and your team build all those years ago. That will help you guide the mechanic and the ship through the treacherous maze of islands, rocks and ice bergs.
+You know exactly what to do. Time to spin up the legacy ice monitoring platform Odin, the one you and your team build all those years ago. That will help you guide the distressed mechanic through the treacherous maze of islands, rocks and ice bergs.
 
 > Listen Isla, just calm down. I'm gonna help you. Just hang in there
 
@@ -54,7 +60,7 @@ ODIN NOT FOUND
 ** ERROR 404 **
 ```
 
-The solar event must have wiped Odin's memory banks! You pull up the source code of Odin - it's empty. You take a look a the clock. You estimate the tanker has about 4-6 hours until it enters the dangerous waters. You should be able to write enough functionalities back before the tanker is in trouble
+The solar event must have wiped Odin's memory banks! You open up the source code of Odin - it's empty. You take a look a the clock. You estimate the tanker has about 4-6 hours until it enters the dangerous waters. You should be able to write enough functionalities back before the tanker is in trouble
 
 You roll up your sleeves and think - it's just programming
 
