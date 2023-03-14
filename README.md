@@ -1,9 +1,9 @@
 # Mapbox locations with FastAPI
 
-![https://img.shields.io/badge/React-v.18-pink](React)
-![https://img.shields.io/badge/react--map--gl-v.7.0-brightgreen](MapBox)
-![https://img.shields.io/badge/FastApi-v.0.45-red](FastAPI)
-![https://img.shields.io/badge/Python-v.3.11-blue](Py)
+![React](https://img.shields.io/badge/React-v.18-pink)
+![MapBox](https://img.shields.io/badge/react--map--gl-v.7.0-brightgreen)
+![fastAPI](https://img.shields.io/badge/FastApi-v.0.45-red)
+![Python](https://img.shields.io/badge/Python-v.3.11-blue)
 
 This project use FastAPI in the backend to build minimum apis to return locations with longitude an lattitude from dummy data. Frontend is built with React and MapBox react-map-gl library. This project would require access token from MapBox to retrieve map data.
 
