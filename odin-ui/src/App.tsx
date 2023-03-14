@@ -1,19 +1,14 @@
 import './App.css';
+import MapBox from './components/MapBox';
 
-const ErrorMessage = () => {
+export const App = () => {
+  if (!process.env.REACT_APP_MAPBOX_TOKEN) {
+    return <>Please add valid Mapbox token</>
+  }
   return (
-      <div className="error-message-container">
-        <h1 className="error-message">
-        ERROR 404 - ODIN NOT FOUND
-        </h1>
-      </div>
-  );
-};
-
-
-export const App = (): JSX.Element => {
-  return (
-    <ErrorMessage/>
+    <div>
+      <MapBox/>
+    </div>
   );
 }
 
