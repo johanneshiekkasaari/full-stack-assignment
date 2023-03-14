@@ -1,6 +1,15 @@
-# Installation
+# Mapbox locations with FastAPI
 
-The frontend server is a Node project using typescript and React. It needs node (v18) installed and can be run with
+![https://img.shields.io/badge/React-v.18-pink](React)
+![https://img.shields.io/badge/react--map--gl-v.7.0-brightgreen](MapBox)
+![https://img.shields.io/badge/FastApi-v.0.45-red](FastAPI)
+![https://img.shields.io/badge/Python-v.3.11-blue](Py)
+
+This project use FastAPI in the backend to build minimum apis to return locations with longitude an lattitude from dummy data. Frontend is built with React and MapBox react-map-gl library. This project would require access token from MapBox to retrieve map data.
+
+## Installation
+
+The frontend server is a Node project using typescript and React. Access to ken to MapBox should be created as environment variable in file .env (created in subfolder directory) as name `REACT_APP_MAPBOX_TOKEN`. It needs node (v18) installed and can be run with
 
 ```
 cd odin-ui
@@ -15,43 +24,26 @@ cd odin-api
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
-# The Tasks
 
-### 1. Create Odin again
+## odin-api
 
-Create the Odin frontend again with React and any map library you choose (we recommend Mapbox GL). The map should open up centered in the coordinates `59.8613` latitude and `22.4673` longitude.
+1. This sub-project is created in OOP methodology, with 3 models: Image, LightHouse, Ship
+2. There are 4 layers in the app: 
+    * Model (create entity)
+    * Repositoty (return raw data, connected to Model layer)
+    * Service (get and transform data, call to Repository layer)
+    * Router (handle request and response, call to Service layer)
+3. SAR image is stored in the backend and retrievable via image router
+4. Ship returns the current (hard-coded) location of ship
+5. LightHouse returns the locations of (hard-coded) lighthouses
 
-### 2. Overlay a SAR image to the map
+## odin-ui
 
-You were able to task the SAR constellation to take a new image. The image has now downlinked and you can find it from `odin-api/SAR_image_20420212.png`.
+1. This is minimum (no styling so far) map layout with image overlay on map.
+2. Information about image, ship, and available lighthourses are obtained from odin-api
 
-The corner coordinates starting from top left are
+## Issues and future improvements
 
-```
-[
-    [22.2908182629724, 59.91614254645401],
-    [22.578806773313246, 59.947751078236365],
-    [22.638044070378744, 59.809992490984754],
-    [22.351391574531174, 59.77847599974091],
-]
-```
-
-Write the functionality to serve this image from the Odin backend to the frontend and overlay it to the map.
-
-### 3. Add the locations of lighthouses to the map
-
-The best way to help the ship navigate is to show the locations of lighthouses on the map. You managed to salvage the old corrupted codebase only a bit, revealing a string related to this data source, it says `seamark:light:range`.
-
-Pull the lighthouse locations with the backend and serve them to the frontend through an endpoint. Visualise them on the map
-
-Also visualise the ship itself. It is currently in coordinates `59.89134, 22.30606`
-
-### 4. Write a short document for the production deployment plan
-
-You remember the magnificently robust way Odin was deployed into production previously. How did it go again?
-
-Write a text document and/or draw a diagram explaining how you would deploy Odin to a production environment. Add it to your repository
-
-### 5. (Optional) Add any other dataset or functionality that could make Odin more useful
-
-If you still have time, visualize any other kind of dataset or add a new functionality that might be useful for Isla when entering the dangerous waters
+1. odin-api has been deployed in Deta Space [https://mapboxapi-1-x6118897.deta.app](deta app). However, the server has Cors issue despite Cors middleware has been added. Local deployment has no Cors issue so far, so that could be FastAPI version in deployment.
+2. odin-ui has minimum theme. Possible styling such as lighthouse animation (ex: lighting dots, ininite illuminating) can be added.
+3. Possibility to turn odin-ui to server side rendering to track realtime location updates.
