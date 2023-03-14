@@ -44,7 +44,7 @@ uvicorn main:app --reload
 
 ## Overview
 
-![screen-gif](./view.gif)
+![screen-gif](./ezgif.com-video-to-gif.gif)
 
 ## Issues and future improvements
 
