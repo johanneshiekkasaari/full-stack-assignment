@@ -41,6 +41,7 @@ uvicorn main:app --reload
 
 1. This is minimum (no styling so far) map layout with image overlay on map.
 2. Information about image, ship, and available lighthourses are obtained from odin-api
+3. Icons have been used to show ship location (the rocket icon), and 4 lighthouses
 
 ## Overview
 
