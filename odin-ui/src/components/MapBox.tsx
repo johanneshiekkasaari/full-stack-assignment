@@ -5,6 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import axiosInstance from '../common/axiosInstance';
 import Ship from './Ship';
 import LightHouse from './LightHouse';
+import { AxiosError } from 'axios';
 
 const layerStyle: LayerProps = {
     type: "raster",
@@ -29,13 +30,25 @@ const MapBox = () => {
     const [coords, setCoords] = useState<Coord[]>([])
     const [img, setImg] = useState("")
     const [pointer, setPointer] = useState<Pointer>()
+    const [error, setError] = useState("");
     useEffect(() => {
         axiosInstance.get<ImageResponse>("images/get")
             .then(res => {
                 setCoords(res.data.corner_coords)
                 setImg(res.data.url)
             })
+            .catch(e => {
+                const axiosError = e as AxiosError
+                setError(axiosError.message)
+            })
     }, [])
+    if (error) {
+        return (
+            <div>
+                <p>{ error}</p>
+            </div>
+        )
+    }
     return (
         <div>
             <div>

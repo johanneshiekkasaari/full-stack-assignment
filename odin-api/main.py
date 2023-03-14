@@ -15,11 +15,10 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-app.include_router(image_route.router)
-app.include_router(lighthouse_route.router)
-app.include_router(ship_route.router)
-
 @app.get("/")
 async def home():
     return RedirectResponse(url="/docs")
-    
+
+app.include_router(image_route.router)
+app.include_router(lighthouse_route.router)
+app.include_router(ship_route.router)
