@@ -42,6 +42,10 @@ uvicorn main:app --reload
 1. This is minimum (no styling so far) map layout with image overlay on map.
 2. Information about image, ship, and available lighthourses are obtained from odin-api
 
+## Overview
+
+![screen-gif](./view.gif)
+
 ## Issues and future improvements
 
 1. odin-api has been deployed in Deta Space [https://mapboxapi-1-x6118897.deta.app](deta app). However, the server has Cors issue despite Cors middleware has been added. Local deployment has no Cors issue so far, so that could be FastAPI version in deployment.
