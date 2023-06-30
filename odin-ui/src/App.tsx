@@ -1,4 +1,5 @@
 import './App.css';
+import Map from './Map';
 
 const ErrorMessage = () => {
   return (
@@ -10,10 +11,9 @@ const ErrorMessage = () => {
   );
 };
 
-
 export const App = (): JSX.Element => {
   return (
-    <ErrorMessage/>
+    <Map/>
   );
 }
 
