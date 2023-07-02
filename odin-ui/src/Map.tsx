@@ -3,6 +3,7 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 const map = () => {
+
   return <Map
       mapLib={maplibregl}
       initialViewState={{
@@ -11,7 +12,7 @@ const map = () => {
         zoom: 10
       }}
       style={{width: 1024, height: 600}}
-      mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+      mapStyle="http://localhost:8000/mapstylesimple"
   />
 }
 
