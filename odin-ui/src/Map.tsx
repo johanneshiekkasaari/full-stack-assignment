@@ -12,7 +12,7 @@ const map = () => {
         zoom: 10
       }}
       style={{width: 1024, height: 600}}
-      mapStyle="http://localhost:8000/mapstylesimple"
+      mapStyle="http://localhost:8000/style"
   />
 }
 
