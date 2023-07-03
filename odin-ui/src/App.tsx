@@ -1,19 +1,6 @@
-import './App.css';
-
-const ErrorMessage = () => {
-  return (
-      <div className="error-message-container">
-        <h1 className="error-message">
-        ERROR 404 - ODIN NOT FOUND
-        </h1>
-      </div>
-  );
-};
-
+import "./App.css";
+import Map from "./Map";
 
 export const App = (): JSX.Element => {
-  return (
-    <ErrorMessage/>
-  );
-}
-
+  return <Map apiUrl="http://localhost:8000" />;
+};
