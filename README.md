@@ -30,10 +30,12 @@ The year is 2075. The Gulf stream has shut down 30 years ago and you're alone on
 
 Suddenly, a crackling voice cuts through the static on the radio:
 ```
----CChhHHRrrZZZ can anyone hear me? Our ship's AI is down---CHzzRR help! I'm a mechanical engineer on an hydrogen tanker, we're heading towards treacherous waters.
+---CChhHHRrrZZZ can anyone hear me? Our ship's AI is down---CHzzRR help!
+I'm a mechanical engineer on an hydrogen tanker,
+we're heading towards treacherous waters!
 ```
 
-Your best hope is Odin, the legacy ice monitoring platform you helped build all those years ago. But the solar flare was too much. As you try to boot it up, a stark message appears:
+Your best hope is Odin, the legacy ice monitoring platform visualising the near real time imagery from ICEYE SAR satellites. But the solar flare was too much. As you try to boot it up, a stark message appears:
 ERROR 404 - ODIN NOT FOUND
 
 Odin's memory is wiped. The source code is empty. The tanker has about 4-6 hours before it hits the dangerous ice and rocks. It's time to code.
